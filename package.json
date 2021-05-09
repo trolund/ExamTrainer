@@ -1,10 +1,11 @@
 {
-  "name": "ExamTrainer",
+  "name": "exam-trainer",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config webpack/webpack.dev.js --watch",
+    "start": "serve -s dist -l $PORT",
+    "dev": "webpack-dev-server --config webpack/webpack.dev.js --watch",
     "build": "webpack --config webpack/webpack.prod.js"
   },
   "author": "Yannick Deubel",
@@ -19,7 +20,8 @@
     "react-dom": "^16.13.1",
     "react-helmet": "^5.2.1",
     "react-router": "^5.0.0",
-    "react-router-dom": "^5.0.0"
+    "react-router-dom": "^5.0.0",
+    "serve": "^11.3.2"
   },
   "devDependencies": {
     "@types/react": "^16.9.32",
